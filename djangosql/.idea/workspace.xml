@@ -11,6 +11,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/djangosql$user_table.coverage" NAME="user_table Coverage Results" MODIFIED="1530080924519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sqlservertester/mazcsql" />
+    <SUITE FILE_PATH="coverage/djangosql$sqltest.coverage" NAME="sqltest Coverage Results" MODIFIED="1530173497284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sqlservertester/test" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -30,8 +31,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/djangosql/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="45" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="45" />
+            <state relative-caret-position="361">
+              <caret line="20" column="54" lean-forward="false" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
               <folding>
                 <element signature="e#633#665#0" expanded="true" />
               </folding>
@@ -42,8 +43,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sqlservertester/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="27" />
+            <state relative-caret-position="380">
+              <caret line="21" column="48" lean-forward="false" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -51,11 +52,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="coupon_table.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sqlservertester/calltables/coupon_table.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <marker date="1530179736152" expanded="true" signature="218:420" ph="select * fro... pit_market_coupon_to_user" />
+                <marker date="1530179736152" expanded="true" signature="362:419" ph="select id fr... pit_member_user" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/sqlservertester/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="52" lean-forward="true" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+            <state relative-caret-position="477">
+              <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -64,17 +78,32 @@
       <file leaf-file-name="user_table.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sqlservertester/calltables/user_table.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="27" column="15" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="15" />
+            <state relative-caret-position="931">
+              <caret line="49" column="25" lean-forward="false" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
               <folding>
-                <marker date="1530092393511" expanded="true" signature="199:295" ph="select id,su... pit_member_user" />
-                <marker date="1530092393511" expanded="true" signature="199:341" ph="select id,su... pit_member_user" />
-                <marker date="1530092393511" expanded="true" signature="199:342" ph="select id,su... pit_member_user" />
-                <marker date="1530092393511" expanded="true" signature="199:355" ph="select id,su... pit_member_user" />
-                <marker date="1530092393511" expanded="true" signature="545:725" ph="select code pit_member_sms" />
-                <marker date="1530092393511" expanded="true" signature="656:724" ph="select MAX(s... pit_member_sms" />
-                <marker date="1530092393511" expanded="true" signature="911:1095" ph="select follo... pit_wechat_user" />
-                <marker date="1530092393511" expanded="true" signature="1037:1094" ph="select id fr... pit_member_user" />
+                <marker date="1530170322736" expanded="true" signature="199:309" ph="select id,su... pit_member_user" />
+                <marker date="1530170322736" expanded="true" signature="199:355" ph="select id,su... pit_member_user" />
+                <marker date="1530170322736" expanded="true" signature="199:356" ph="select id,su... pit_member_user" />
+                <marker date="1530170322736" expanded="true" signature="199:369" ph="select id,su... pit_member_user" />
+                <marker date="1530170322736" expanded="true" signature="689:869" ph="select code pit_member_sms" />
+                <marker date="1530170322736" expanded="true" signature="800:868" ph="select MAX(s... pit_member_sms" />
+                <marker date="1530170322736" expanded="true" signature="1158:1342" ph="select follo... pit_wechat_user" />
+                <marker date="1530170322736" expanded="true" signature="1284:1341" ph="select id fr... pit_member_user" />
+                <marker date="1530170322736" expanded="true" signature="1647:1845" ph="select coin_... pit_member_finance" />
+                <marker date="1530170322736" expanded="true" signature="1787:1844" ph="select id fr... pit_member_user" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sqltest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sqlservertester/test/sqltest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <marker date="1530173497134" expanded="true" signature="179:330" ph="select * fro... pit_market_coupon_to_user" />
+                <marker date="1530173497134" expanded="true" signature="272:329" ph="select id fr... pit_member_user" />
               </folding>
             </state>
           </provider>
@@ -84,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/sqlservertester/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="23" />
+              <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -111,10 +140,12 @@
         <option value="$PROJECT_DIR$/sqlservertester/test/testself.py" />
         <option value="$PROJECT_DIR$/sqlservertester/user_table.py" />
         <option value="$PROJECT_DIR$/sqlservertester/templates/polls/home.html" />
-        <option value="$PROJECT_DIR$/sqlservertester/urls.py" />
         <option value="$PROJECT_DIR$/sqlservertester/templates/sqlservertester/home.html" />
         <option value="$PROJECT_DIR$/sqlservertester/calltables/user_table.py" />
+        <option value="$PROJECT_DIR$/sqlservertester/test/sqltest.py" />
         <option value="$PROJECT_DIR$/sqlservertester/views.py" />
+        <option value="$PROJECT_DIR$/sqlservertester/urls.py" />
+        <option value="$PROJECT_DIR$/sqlservertester/calltables/coupon_table.py" />
         <option value="$PROJECT_DIR$/templates/sqlservertester/home.html" />
       </list>
     </option>
@@ -126,9 +157,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="478" />
-    <option name="y" value="21" />
-    <option name="width" value="1317" />
+    <option name="x" value="467" />
+    <option name="y" value="43" />
+    <option name="width" value="1384" />
     <option name="height" value="1006" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -162,7 +193,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -189,6 +219,12 @@
             <path>
               <item name="djangosql" type="b2602c69:ProjectViewProjectNode" />
               <item name="djangosql" type="462c0819:PsiDirectoryNode" />
+              <item name="sqlservertester" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="djangosql" type="b2602c69:ProjectViewProjectNode" />
+              <item name="djangosql" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -207,6 +243,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -237,7 +274,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.user_table">
+  <component name="RunManager" selected="Python.sqltest">
+    <configuration name="sqltest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sqlservertester/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="djangosql" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sqlservertester/test/sqltest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="user_table" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -279,13 +335,15 @@
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Django server.djangosql" />
       <item index="1" class="java.lang.String" itemvalue="Python.user_table" />
+      <item index="2" class="java.lang.String" itemvalue="Python.sqltest" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.user_table" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.sqltest" />
+        <item index="1" class="java.lang.String" itemvalue="Python.user_table" />
       </list>
     </recent_temporary>
   </component>
@@ -306,7 +364,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="478" y="21" width="1317" height="1006" extended-state="0" />
+    <frame x="467" y="43" width="1384" height="1006" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
@@ -316,7 +374,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2631579" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20604613" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20166163" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -345,6 +403,158 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/djangosql/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djangosql/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+          <folding>
+            <element signature="e#633#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlservertester/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlservertester/calltables/coupon_table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1530179736152" expanded="true" signature="218:420" ph="select * fro... pit_market_coupon_to_user" />
+            <marker date="1530179736152" expanded="true" signature="362:419" ph="select id fr... pit_member_user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlservertester/calltables/user_table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="49" column="25" lean-forward="true" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+          <folding>
+            <marker date="1530170322736" expanded="true" signature="199:309" ph="select id,su... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="199:355" ph="select id,su... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="199:356" ph="select id,su... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="199:369" ph="select id,su... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="689:869" ph="select code pit_member_sms" />
+            <marker date="1530170322736" expanded="true" signature="800:868" ph="select MAX(s... pit_member_sms" />
+            <marker date="1530170322736" expanded="true" signature="1158:1342" ph="select follo... pit_wechat_user" />
+            <marker date="1530170322736" expanded="true" signature="1284:1341" ph="select id fr... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="1647:1845" ph="select coin_... pit_member_finance" />
+            <marker date="1530170322736" expanded="true" signature="1787:1844" ph="select id fr... pit_member_user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlservertester/test/sqltest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1530173497134" expanded="true" signature="179:330" ph="select * fro... pit_market_coupon_to_user" />
+            <marker date="1530173497134" expanded="true" signature="272:329" ph="select id fr... pit_member_user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlservertester/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sqlservertester/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djangosql/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djangosql/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="20" column="45" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="45" />
+          <folding>
+            <element signature="e#633#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlservertester/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlservertester/calltables/user_table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="15" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="15" />
+          <folding>
+            <marker date="1530170322736" expanded="true" signature="199:309" ph="select id,su... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="199:355" ph="select id,su... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="199:356" ph="select id,su... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="199:369" ph="select id,su... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="689:869" ph="select code pit_member_sms" />
+            <marker date="1530170322736" expanded="true" signature="800:868" ph="select MAX(s... pit_member_sms" />
+            <marker date="1530170322736" expanded="true" signature="1158:1342" ph="select follo... pit_wechat_user" />
+            <marker date="1530170322736" expanded="true" signature="1284:1341" ph="select id fr... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="1647:1845" ph="select coin_... pit_member_finance" />
+            <marker date="1530170322736" expanded="true" signature="1787:1844" ph="select id fr... pit_member_user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlservertester/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sqlservertester/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="52" lean-forward="true" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/djangosql/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -388,14 +598,16 @@
         <state relative-caret-position="266">
           <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding>
-            <marker date="1530092393511" expanded="true" signature="199:295" ph="select id,su... pit_member_user" />
-            <marker date="1530092393511" expanded="true" signature="199:341" ph="select id,su... pit_member_user" />
-            <marker date="1530092393511" expanded="true" signature="199:342" ph="select id,su... pit_member_user" />
-            <marker date="1530092393511" expanded="true" signature="199:355" ph="select id,su... pit_member_user" />
-            <marker date="1530092393511" expanded="true" signature="545:725" ph="select code pit_member_sms" />
-            <marker date="1530092393511" expanded="true" signature="656:724" ph="select MAX(s... pit_member_sms" />
-            <marker date="1530092393511" expanded="true" signature="911:1095" ph="select follo... pit_wechat_user" />
-            <marker date="1530092393511" expanded="true" signature="1037:1094" ph="select id fr... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="199:309" ph="select id,su... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="199:355" ph="select id,su... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="199:356" ph="select id,su... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="199:369" ph="select id,su... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="689:869" ph="select code pit_member_sms" />
+            <marker date="1530170322736" expanded="true" signature="800:868" ph="select MAX(s... pit_member_sms" />
+            <marker date="1530170322736" expanded="true" signature="1158:1342" ph="select follo... pit_wechat_user" />
+            <marker date="1530170322736" expanded="true" signature="1284:1341" ph="select id fr... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="1647:1845" ph="select coin_... pit_member_finance" />
+            <marker date="1530170322736" expanded="true" signature="1787:1844" ph="select id fr... pit_member_user" />
           </folding>
         </state>
       </provider>
@@ -408,20 +620,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sqlservertester/test/testself.py">
+    <entry file="file://$PROJECT_DIR$/sqlservertester/test/testself.py" />
+    <entry file="file://$PROJECT_DIR$/sqlservertester/calltables/user_table.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="931">
+          <caret line="49" column="25" lean-forward="false" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+          <folding>
+            <marker date="1530170322736" expanded="true" signature="199:309" ph="select id,su... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="199:355" ph="select id,su... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="199:356" ph="select id,su... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="199:369" ph="select id,su... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="689:869" ph="select code pit_member_sms" />
+            <marker date="1530170322736" expanded="true" signature="800:868" ph="select MAX(s... pit_member_sms" />
+            <marker date="1530170322736" expanded="true" signature="1158:1342" ph="select follo... pit_wechat_user" />
+            <marker date="1530170322736" expanded="true" signature="1284:1341" ph="select id fr... pit_member_user" />
+            <marker date="1530170322736" expanded="true" signature="1647:1845" ph="select coin_... pit_member_finance" />
+            <marker date="1530170322736" expanded="true" signature="1787:1844" ph="select id fr... pit_member_user" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/djangosql/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="45" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="45" />
+        <state relative-caret-position="361">
+          <caret line="20" column="54" lean-forward="false" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
           <folding>
             <element signature="e#633#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlservertester/test/sqltest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1530173497134" expanded="true" signature="179:330" ph="select * fro... pit_market_coupon_to_user" />
+            <marker date="1530173497134" expanded="true" signature="272:329" ph="select id fr... pit_member_user" />
           </folding>
         </state>
       </provider>
@@ -429,34 +664,17 @@
     <entry file="file://$PROJECT_DIR$/sqlservertester/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="23" />
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sqlservertester/calltables/user_table.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="27" column="15" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="15" />
-          <folding>
-            <marker date="1530092393511" expanded="true" signature="199:295" ph="select id,su... pit_member_user" />
-            <marker date="1530092393511" expanded="true" signature="199:341" ph="select id,su... pit_member_user" />
-            <marker date="1530092393511" expanded="true" signature="199:342" ph="select id,su... pit_member_user" />
-            <marker date="1530092393511" expanded="true" signature="199:355" ph="select id,su... pit_member_user" />
-            <marker date="1530092393511" expanded="true" signature="545:725" ph="select code pit_member_sms" />
-            <marker date="1530092393511" expanded="true" signature="656:724" ph="select MAX(s... pit_member_sms" />
-            <marker date="1530092393511" expanded="true" signature="911:1095" ph="select follo... pit_wechat_user" />
-            <marker date="1530092393511" expanded="true" signature="1037:1094" ph="select id fr... pit_member_user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sqlservertester/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="27" />
+        <state relative-caret-position="380">
+          <caret line="21" column="48" lean-forward="false" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -465,9 +683,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/sqlservertester/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="52" lean-forward="true" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+        <state relative-caret-position="477">
+          <caret line="33" column="4" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlservertester/calltables/coupon_table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1530179736152" expanded="true" signature="218:420" ph="select * fro... pit_market_coupon_to_user" />
+            <marker date="1530179736152" expanded="true" signature="362:419" ph="select id fr... pit_member_user" />
+          </folding>
         </state>
       </provider>
     </entry>
