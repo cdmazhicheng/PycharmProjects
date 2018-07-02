@@ -28,7 +28,144 @@
 
 <p>------------------------------------------------------------------------------------------------------</p>
 
-<h4>账号优惠券信息（13551002117）</h4>
+<h4>账号优惠券信息</h4>
 
-<a></a><br>
-    <a>TEST：{{ test }}</a><br>
+
+<table border="1">
+    <tr>
+        <th>优惠券名称</th>
+        <th>优惠券ID</th>
+        <th>优惠券的过期时间</th>
+        <th>对应使用的订单号</th>
+        <th>是否已经被使用</th>
+    </tr>
+    {% for i in coupon %}
+    <tr>
+        <td>{{ i.4 }}</td>
+
+        {% if i.5 == 2 %}
+            <td bgcolor="#a9a9a9">{{ i.0 }}</td>
+        {% else %}
+            <td>{{ i.0 }}</td>
+        {% endif %}
+
+        {% if i.1 < mylocaltime %}
+            <td><font size="3" color="#ff4500">{{ i.1 }}（过期）</font></td>
+        {% else %}
+            <td>{{ i.1 }}</td>
+        {% endif %}
+        <td>{{ i.3 }}</td>
+        <td>{{ i.2 }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<a></a></br>
+
+<table border="1">
+    <tr>
+        <th>礼包领取的优惠券ID</th>
+        <th>优惠券目前在如下礼包中存在</th>
+    </tr>
+    {% for i in market_coupon_to_package %}
+    <tr>
+        <td bgcolor="#a9a9a9">{{ i.0 }}</td>
+        <td>{{ i.1 }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+<p>------------------------------------------------------------------------------------------------------</p>
+
+<h4>订单信息<a> <font size="3" color="#9acd32">节省总金额：{{ oil_order_pay_sum }} 元</font></a></h4>
+
+<table border="1">
+    <tr>
+        <th></th>
+        <th colspan="4" >用户</th>
+        <th colspan="6" >油站</th>
+
+    </tr>
+    <tr>
+        <th>订单号</th>
+
+        <th>加油金额</th>
+        <th>节省金额</th>
+        <th>支付金额</th>
+        <th>支付方式</th>
+
+        <th>油站名称</th>
+        <th>油枪</th>
+        <th>油品</th>
+        <th>市场价</th>
+        <th>加油升数</th>
+
+    </tr>
+    {% for i in order_list %}
+        <tr>
+            <td>{{ i.0.0 }} </td>
+
+            <td>{{ i.0.1 }}</td>
+            <td bgcolor="#9acd32">{{ i.2.1 }}</td>
+            <td>{{ i.1.0 }}</td>
+            <td>{{ i.1.1 }}</td>
+
+            <td></td>
+            <td></td>
+            {% if i.0.2 == 10 %}
+                <td>92#</td>
+            {% elif i.0.2 == 11 %}
+                <td>95#</td>
+            {% elif i.0.2 == 12 %}
+                <td>98#</td>
+            {% elif i.0.2 == 20 %}
+                <td>0#</td>
+            {% else %}
+                <td>--</td>
+            {% endif %}
+            <td>{{ i.0.3 }}</td>
+            <td>{{ i.0.4 }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+<br/>
+
+<table border="1">
+    <tr>
+        <th>订单号</th>
+        <th>优惠金额</th>
+        <th>discount_type</th>
+        <th>discount_by</th>
+        <th>优惠描述</th>
+    </tr>
+    {% for i in oil_order_discount_detail %}
+    <tr>
+        <td>{{ i.0 }}</td>
+        <td bgcolor="#9acd32">{{ i.3 }}</td>
+        <td>{{ i.1 }}</td>
+        <td>{{ i.2 }}</td>
+        {% if i.1 == 0 and i.2 == 1 %}
+            <td>平台优惠</td>
+        {% elif i.1 == 1 and i.2 == 1 %}
+            <td>平台活动</td>
+        {% elif i.1 == 1 and i.2 == 2 %}
+            <td>油站活动</td>
+        {% else %}
+            <td>未知优惠</td>
+        {% endif %}
+    </tr>
+    {% endfor %}
+</table>
+
+<a>{{ oil_order_pay_sum }}</a>
+
+
+
+
+
+
+
+<br/>
+<br/>
