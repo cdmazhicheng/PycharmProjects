@@ -25,7 +25,7 @@ SECRET_KEY = '07*s50xv!4h=&cp4!8c64qgz!c7=!(8)mpk0d466fj)6#56j9p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.5.74']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'sqlservertester',
 ]
 
 MIDDLEWARE = [

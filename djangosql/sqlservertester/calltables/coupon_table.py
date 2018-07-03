@@ -1,8 +1,10 @@
 import pymssql
+from sqlservertester import models
 
 conn = pymssql.connect(host='192.168.5.32', user='test', password='85442791', database='Ytny')
 cursor = conn.cursor()
-mymobile = "13551002117"
+mymobile = models.Persion.objects.values('mobile')[0]['mobile']
+# mymobile = '13086668476 '
 
 # 查询用户的优惠券
 def market_coupon_to_user(self):

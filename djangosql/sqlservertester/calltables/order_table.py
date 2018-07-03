@@ -1,8 +1,9 @@
 import pymssql
+from sqlservertester import models
 
 conn = pymssql.connect(host='192.168.5.32', user='test', password='85442791', database='Ytny')
 cursor = conn.cursor()
-mymobile = "13551002117"
+mymobile = models.Persion.objects.values('mobile')[0]['mobile']
 
 # 查询订单表数据
 def oil_order(self):

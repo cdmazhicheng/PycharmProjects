@@ -1,9 +1,13 @@
 from django.shortcuts import render
 from sqlservertester.calltables import user_table, coupon_table, order_table
 import time
+from . import models
 
 #账号数据
 def user(request):
+    #本地数据库操作
+    persion = models.Persion.objects.values('mobile')[0]['mobile']
+
     # 账号数据
     message_user = user_table.user_message(request) #pit_member_user表
     member_sms = user_table.member_user(request)#pit_member_sms表
@@ -33,6 +37,9 @@ def user(request):
     order_list = zip(oil_order,oil_order_pay,oil_order_discount)
 
     context = {
+               #本地数据库账号
+                'persion': persion,
+
                # 账号数据
                'user_id': message_user[0][0],
                'suggest_user_id': message_user[0][1],
