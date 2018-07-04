@@ -1,4 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>账号自动测试</title>
+</head>
+<body>
 
+
+<form method='post'>
+{% csrf_token %}
+{{ form }}
+<input type="submit" value="提交">
+</form>
 
 <h3>账号数据：{{ persion }}</h3>
 <a>--手机账号--</a><br>
@@ -159,12 +172,9 @@
     {% endfor %}
 </table>
 
-
-
-
-
-
-
-
 <br/>
 <br/>
+
+
+</body>
+</html>

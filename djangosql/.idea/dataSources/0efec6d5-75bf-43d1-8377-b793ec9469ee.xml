@@ -25,7 +25,7 @@
     <table id="17" parent="2" name="sqlite_sequence">
       <System>1</System>
     </table>
-    <table id="18" parent="2" name="sqlservertester_persion"/>
+    <table id="18" parent="2" name="sqlserveruser_persion"/>
     <column id="19" parent="6" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
