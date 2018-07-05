@@ -6,5 +6,55 @@
 </head>
 <body>
 
+<h3>会员统计自动测试用例：{{ persion }}</h3>
+
+
+<a>统计时间：{{ begin_time }} >>>>>>>> {{ end_time }}</a><br/>
+
+<br/>
+<br/>
+
+<table border="1">
+
+    <tr>
+        <td>
+            <a><font color="red">注册用户</font></a><br/>
+            <a>------------------------------------</a><br/>
+            注册用户：{{ pit_member_user_register }}<br/>
+            今日注册用户：{{ pit_member_user_register_today }}<br/>
+            昨日注册用户：{{ pit_member_user_register_yesterday }}<br/>
+            同比：{{ register_ratio }}<br/>
+        </td>
+        <td>
+            <a><font color="red">新增会员</font></a><br/>
+            <a>------------------------------------</a><br/>
+            新增会员数量：{{ pit_member_user_vip }}<br/>
+            今日新增会员：{{ pit_member_user_vip_today }}<br/>
+            昨日新增会员：{{ pit_member_user_vip_yesterday }}<br/>
+            同比：{{ vip_ratio }} <br/>
+        </td>
+        <td>
+            <a><font color="red">会员支付人数</font></a><br/>
+            <a>------------------------------------</a><br/>
+            会员支付人数：{{ pit_member_user_pay_number }}<br/>
+            今日会员支付人数：{{ pit_member_user_pay_number_today }}<br/>
+            昨日会员支付人数：{{ pit_member_user_pay_number_yesterday }}<br/>
+            同比：{{ pay_number_ratio }} <br/>
+        </td>
+
+
+
+    </tr>
+
+    <tr>
+{#        <td>#}
+            {#待插入#}
+{#        </td>#}
+    </tr>
+
+</table>
+
+
 </body>
 </html>
+
