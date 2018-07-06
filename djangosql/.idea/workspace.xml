@@ -68,8 +68,8 @@
       <file leaf-file-name="coupon_table.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sqlserveruser/calltables/coupon_table.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+            <state relative-caret-position="722">
+              <caret line="39" column="10" lean-forward="false" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
                 <marker date="1530692999486" expanded="true" signature="342:1095" ph="select pit_m... pit_market_coupon_to_user" />
@@ -85,21 +85,24 @@
       <file leaf-file-name="kanban.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sqlservermember/calltables/kanban.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="107" column="40" lean-forward="false" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="40" />
+            <state relative-caret-position="391">
+              <caret line="142" column="37" lean-forward="false" selection-start-line="142" selection-start-column="4" selection-end-line="142" selection-end-column="37" />
               <folding>
-                <marker date="1530783645225" expanded="true" signature="296:428" ph="select COUNT... pit_member_user" />
-                <marker date="1530783645225" expanded="true" signature="296:445" ph="select COUNT... pit_member_user" />
-                <marker date="1530783645225" expanded="true" signature="718:799" ph="select COUNT... pit_member_user" />
-                <marker date="1530783645225" expanded="true" signature="1069:1150" ph="select COUNT... pit_member_user" />
-                <marker date="1530783645225" expanded="true" signature="1428:1867" ph="select COUNT... pit_member_finance" />
-                <marker date="1530783645225" expanded="true" signature="2114:2489" ph="select COUNT... pit_member_finance" />
-                <marker date="1530783645225" expanded="true" signature="2734:3109" ph="select COUNT... pit_member_finance" />
-                <marker date="1530783645225" expanded="true" signature="2846:3107" ph="select COUNT... pit_member_finance" />
-                <marker date="1530783645225" expanded="true" signature="3389:3998" ph="select COUNT... pit_member_finance" />
-                <marker date="1530783645225" expanded="true" signature="3389:4015" ph="select pit_o... pit_member_finance" />
-                <marker date="1530783645225" expanded="true" signature="4310:4912" ph="select pit_o... pit_member_finance" />
-                <marker date="1530783645225" expanded="true" signature="5232:5834" ph="select pit_o... pit_member_finance" />
+                <marker date="1530844730620" expanded="true" signature="296:428" ph="select COUNT... pit_member_user" />
+                <marker date="1530844730620" expanded="true" signature="296:445" ph="select COUNT... pit_member_user" />
+                <marker date="1530844730620" expanded="true" signature="718:799" ph="select COUNT... pit_member_user" />
+                <marker date="1530844730620" expanded="true" signature="1069:1150" ph="select COUNT... pit_member_user" />
+                <marker date="1530844730620" expanded="true" signature="1427:1866" ph="select COUNT... pit_member_finance" />
+                <marker date="1530844730620" expanded="true" signature="2113:2488" ph="select COUNT... pit_member_finance" />
+                <marker date="1530844730620" expanded="true" signature="2733:3108" ph="select COUNT... pit_member_finance" />
+                <marker date="1530844730620" expanded="true" signature="2845:3106" ph="select COUNT... pit_member_finance" />
+                <marker date="1530844730620" expanded="true" signature="3387:3996" ph="select COUNT... pit_member_finance" />
+                <marker date="1530844730620" expanded="true" signature="3387:4013" ph="select pit_o... pit_member_finance" />
+                <marker date="1530844730620" expanded="true" signature="4307:4909" ph="select pit_o... pit_member_finance" />
+                <marker date="1530844730620" expanded="true" signature="5228:5830" ph="select pit_o... pit_member_finance" />
+                <marker date="1530844730620" expanded="true" signature="6164:6698" ph="select sum(p... pit_member_finance" />
+                <marker date="1530844730620" expanded="true" signature="6977:7451" ph="select sum(p... pit_member_finance" />
+                <marker date="1530844730620" expanded="true" signature="7727:8201" ph="select sum(p... pit_member_finance" />
               </folding>
             </state>
           </provider>
@@ -108,7 +111,7 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/sqlservertester/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
+            <state relative-caret-position="285">
               <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="27" />
               <folding />
             </state>
@@ -130,8 +133,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sqlservermember/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="79" column="24" lean-forward="true" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
+            <state relative-caret-position="209">
+              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -142,8 +145,8 @@
       <file leaf-file-name="member.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/sqlservertester/member.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="36" column="55" lean-forward="true" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+            <state relative-caret-position="505">
+              <caret line="52" column="63" lean-forward="true" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -256,8 +259,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="329" />
-    <option name="y" value="10" />
+    <option name="x" value="283" />
+    <option name="y" value="38" />
     <option name="width" value="1579" />
     <option name="height" value="1006" />
   </component>
@@ -448,16 +451,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="329" y="10" width="1579" height="1006" extended-state="0" />
+    <frame x="283" y="38" width="1579" height="1006" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27459955" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27459955" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27345538" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15997367" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16194865" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12990937" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -861,7 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -947,7 +950,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/sqlservertester/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
+        <state relative-caret-position="285">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="27" />
           <folding />
         </state>
@@ -955,8 +958,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sqlserveruser/calltables/coupon_table.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+        <state relative-caret-position="722">
+          <caret line="39" column="10" lean-forward="false" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
             <marker date="1530692999486" expanded="true" signature="342:1095" ph="select pit_m... pit_market_coupon_to_user" />
@@ -970,37 +973,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sqlservermember/calltables/kanban.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="107" column="40" lean-forward="false" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="40" />
+        <state relative-caret-position="391">
+          <caret line="142" column="37" lean-forward="false" selection-start-line="142" selection-start-column="4" selection-end-line="142" selection-end-column="37" />
           <folding>
-            <marker date="1530783645225" expanded="true" signature="296:428" ph="select COUNT... pit_member_user" />
-            <marker date="1530783645225" expanded="true" signature="296:445" ph="select COUNT... pit_member_user" />
-            <marker date="1530783645225" expanded="true" signature="718:799" ph="select COUNT... pit_member_user" />
-            <marker date="1530783645225" expanded="true" signature="1069:1150" ph="select COUNT... pit_member_user" />
-            <marker date="1530783645225" expanded="true" signature="1428:1867" ph="select COUNT... pit_member_finance" />
-            <marker date="1530783645225" expanded="true" signature="2114:2489" ph="select COUNT... pit_member_finance" />
-            <marker date="1530783645225" expanded="true" signature="2734:3109" ph="select COUNT... pit_member_finance" />
-            <marker date="1530783645225" expanded="true" signature="2846:3107" ph="select COUNT... pit_member_finance" />
-            <marker date="1530783645225" expanded="true" signature="3389:3998" ph="select COUNT... pit_member_finance" />
-            <marker date="1530783645225" expanded="true" signature="3389:4015" ph="select pit_o... pit_member_finance" />
-            <marker date="1530783645225" expanded="true" signature="4310:4912" ph="select pit_o... pit_member_finance" />
-            <marker date="1530783645225" expanded="true" signature="5232:5834" ph="select pit_o... pit_member_finance" />
+            <marker date="1530844730620" expanded="true" signature="296:428" ph="select COUNT... pit_member_user" />
+            <marker date="1530844730620" expanded="true" signature="296:445" ph="select COUNT... pit_member_user" />
+            <marker date="1530844730620" expanded="true" signature="718:799" ph="select COUNT... pit_member_user" />
+            <marker date="1530844730620" expanded="true" signature="1069:1150" ph="select COUNT... pit_member_user" />
+            <marker date="1530844730620" expanded="true" signature="1427:1866" ph="select COUNT... pit_member_finance" />
+            <marker date="1530844730620" expanded="true" signature="2113:2488" ph="select COUNT... pit_member_finance" />
+            <marker date="1530844730620" expanded="true" signature="2733:3108" ph="select COUNT... pit_member_finance" />
+            <marker date="1530844730620" expanded="true" signature="2845:3106" ph="select COUNT... pit_member_finance" />
+            <marker date="1530844730620" expanded="true" signature="3387:3996" ph="select COUNT... pit_member_finance" />
+            <marker date="1530844730620" expanded="true" signature="3387:4013" ph="select pit_o... pit_member_finance" />
+            <marker date="1530844730620" expanded="true" signature="4307:4909" ph="select pit_o... pit_member_finance" />
+            <marker date="1530844730620" expanded="true" signature="5228:5830" ph="select pit_o... pit_member_finance" />
+            <marker date="1530844730620" expanded="true" signature="6164:6698" ph="select sum(p... pit_member_finance" />
+            <marker date="1530844730620" expanded="true" signature="6977:7451" ph="select sum(p... pit_member_finance" />
+            <marker date="1530844730620" expanded="true" signature="7727:8201" ph="select sum(p... pit_member_finance" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/sqlservertester/member.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="36" column="55" lean-forward="true" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+        <state relative-caret-position="505">
+          <caret line="52" column="63" lean-forward="true" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sqlservermember/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="79" column="24" lean-forward="true" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
+        <state relative-caret-position="209">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>

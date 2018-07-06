@@ -27,7 +27,7 @@ def member(request):
     elif pit_member_user_register_today == 0:
         register_ratio = -pit_member_user_register_yesterday
     else:
-        register_ratio = pit_member_user_register_today/pit_member_user_register_yesterday
+        register_ratio = round(pit_member_user_register_today/pit_member_user_register_yesterday, 2)
 
 #######新增会员##########
 
@@ -47,20 +47,36 @@ def member(request):
 
 #######会员支付人数##########
 
-        #时间区间会员支付人数
-        pit_member_user_pay_number = len(kanban.pit_member_user_pay_number(request))
-        #今日会员支付人数
-        pit_member_user_pay_number_today = len(kanban.pit_member_user_pay_number_today(request))
-        #昨日会员支付人数
-        pit_member_user_pay_number_yesterday = len(kanban.pit_member_user_pay_number_yesterday(request))
-        #会员同比增长
-        if pit_member_user_pay_number_today == 0:
-            pay_number_ratio = pit_member_user_pay_number_today
-        elif pit_member_user_pay_number_yesterday == 0:
-            pay_number_ratio = -pit_member_user_pay_number_yesterday
-        else:
-            pay_number_ratio = round(pit_member_user_pay_number_today / pit_member_user_pay_number_yesterday, 2)
+    #时间区间会员支付人数
+    pit_member_user_pay_number = len(kanban.pit_member_user_pay_number(request))
+    #今日会员支付人数
+    pit_member_user_pay_number_today = len(kanban.pit_member_user_pay_number_today(request))
+    #昨日会员支付人数
+    pit_member_user_pay_number_yesterday = len(kanban.pit_member_user_pay_number_yesterday(request))
+    #会员同比增长
+    if pit_member_user_pay_number_today == 0:
+        pay_number_ratio = pit_member_user_pay_number_today
+    elif pit_member_user_pay_number_yesterday == 0:
+        pay_number_ratio = -pit_member_user_pay_number_yesterday
+    else:
+        pay_number_ratio = round(pit_member_user_pay_number_today / pit_member_user_pay_number_yesterday, 2)
 
+
+#######会员支付金额##########
+
+    #时间区间会员支付金额
+        pit_member_user_pay_amt = kanban.pit_member_user_pay_amt(request)
+    #当日支付金额
+        pit_member_user_pay_amt_today = kanban.pit_member_user_pay_amt_today(request)[0][0]
+    #昨日支付金额
+        pit_member_user_pay_amt_yesterday = kanban.pit_member_user_pay_amt_yesterday(request)[0][0]
+    #会员同比增长
+    if pit_member_user_pay_amt_today == 0:
+        pay_amt_ratio = pit_member_user_pay_amt_today
+    elif pit_member_user_pay_amt_yesterday == 0:
+        pay_amt_ratio = -pit_member_user_pay_amt_yesterday
+    else:
+        pay_amt_ratio = round(pit_member_user_pay_amt_today / pit_member_user_pay_amt_yesterday, 2)
 
 ####################
 ##  context部分 ####
@@ -97,6 +113,12 @@ def member(request):
                 'pit_member_user_pay_number_yesterday': pit_member_user_pay_number_yesterday,
                 'pay_number_ratio': pay_number_ratio,
 
+#######会员支付金额##########
+
+                'pit_member_user_pay_amt': pit_member_user_pay_amt,
+                'pit_member_user_pay_amt_today': pit_member_user_pay_amt_today,
+                'pit_member_user_pay_amt_yesterday': pit_member_user_pay_amt_yesterday,
+                'pay_amt_ratio': pay_amt_ratio,
                }
 
     return render(request, 'sqlservertester/member.html', context)

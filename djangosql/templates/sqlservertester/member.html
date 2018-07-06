@@ -34,12 +34,24 @@
             同比：{{ vip_ratio }} <br/>
         </td>
         <td>
-            <a><font color="red">会员支付人数</font></a><br/>
+            <a><font color="red">支付人数</font></a><br/>
             <a>------------------------------------</a><br/>
             会员支付人数：{{ pit_member_user_pay_number }}<br/>
             今日会员支付人数：{{ pit_member_user_pay_number_today }}<br/>
             昨日会员支付人数：{{ pit_member_user_pay_number_yesterday }}<br/>
             同比：{{ pay_number_ratio }} <br/>
+        </td>
+        <td>
+            <a><font color="red">支付金额</font></a><br/>
+            <a>------------------------------------</a><br/>
+            {% if pit_member_user_pay_amt.0.0 == None %}
+                支付金额：0<br/>
+            {% else %}
+                 支付金额：{{ pit_member_user_pay_amt.0.0 }}<br/>
+            {% endif %}
+            今日支付金额：{{ pit_member_user_pay_amt_today}}<br/>
+            昨日支付金额：{{ pit_member_user_pay_amt_yesterday }}<br/>
+            同比：{{ pay_amt_ratio }} <br/>
         </td>
 
 
