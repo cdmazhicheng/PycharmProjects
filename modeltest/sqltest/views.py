@@ -52,4 +52,4 @@ def display(request):
 
     }
 
-    return render(request,'displayweb.html',context)
+    return render(request, 'displayweb.html', context)
