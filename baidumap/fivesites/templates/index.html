@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+{% load static %}
+<link href="{% static 'fivesites/css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
+<script src="{% static 'fivesites/js/jquery.min.js' %}"></script>
+<script src="{% static 'fivesites/js/move-top.js' %}"></script>
+<script src="{% static 'fivesites/js/easing.js' %}"></script>
+<link href="{% static 'fivesites/css/style.css' %}" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak={{ my_ak }}"></script>
+
+<style type="text/css">  
+        html{height:100%}  
+        body{height:100%;margin:0px;padding:0px}  
+        #map{height:70%;width:80%;margin:5px auto;} 
+</style> 
+
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			 <div class="logo">
+				<br>
+				<span id="mytime"></span>
+				<script>
+					function showTime(){
+						nowtime=new Date();
+						year=nowtime.getFullYear();
+						month=nowtime.getMonth()+1;
+						date=nowtime.getDate();
+						document.getElementById("mytime").innerText=year+"年"+month+"月"+date+"日"+nowtime.toLocaleTimeString();
+					}
+					setInterval("showTime()",1000);	
+				</script>
+			 </div>
+				 <nav class="top-nav">
+					<ul class="top-nav">
+						<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">成都站 </a></li>
+					</ul>
+				</nav>			
+			<div class="clearfix"></div>
+		  </div>
+	</div>
+	<br>
+	<!--map-->
+    <div>{{ fivesite_name_many }}</div>
+	<div id="map">	
+	</div>
+	<script>
+		var map = new BMap.Map("map"); // 创建地图实例
+		var point = new BMap.Point({{ coordinate_chengdu.0 }}, {{ coordinate_chengdu.1 }}); // 创建点坐标
+		map.centerAndZoom(point, 13);   // 初始化地图，设置中心点坐标和地图级别
+		map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+        var mapStyle={style : "normal"}  //地图模板选择
+        map.setMapStyle(mapStyle);  //实现地图模板
+        //单地址显示
+        {#var point_site = new BMap.Point({{ coordinate_point.0 }},{{ coordinate_point.1 }});#}
+        {#var marker = new BMap.Marker(point_site)#}
+        {#map.addOverlay(marker)#}
+        {#var label = new BMap.Label("{{ fivesit_name_only }}", {offset:new BMap.Size(-10,-20)})#}
+        {#marker.setLabel(label)#}
+
+        //多地址显示
+        var coordinate_points = "{{ coordinate_points }}"
+        var coordinate_points_json = coordinate_points.replace(/\&quot;/g, '\"');
+        var coordinate_points_json_result = JSON.parse(coordinate_points_json);
+
+        var coordinate_names = "{{ fivesite_name_many }}"
+        var coordinate_names_split = coordinate_names.split(",")
+
+        for(var i=0;i<coordinate_points_json_result.length;i++){
+            var points = new BMap.Point(coordinate_points_json_result[i][0], coordinate_points_json_result[i][1]); // 创建点
+            var markers = new BMap.Marker(points);// 创建标注
+            map.addOverlay(markers);    //增加点
+            var label = new BMap.Label(coordinate_names_split[i], {offset:new BMap.Size(-10,-20)})
+            markers.setLabel(label)
+         }
+	</script>
+	<div class="main">
+      	<div class="content-top" id="fea">
+      		<div class="container">
+      			<p class="m_2">声明：本站点永久免费提供成都市五人制足球场地数据信息.数据仅供参考！</p>
+      			<ul class="icons">
+      				<li><a href="#"><i class="icon1"> </i></a></li>
+      				<li><a href="#"><i class="icon2"> </i></a></li>
+      				<li><a href="#"><i class="icon3"> </i></a></li>
+      				<li><a href="#"><i class="icon4"> </i></a></li>
+      				<li><a href="#"><i class="icon5"> </i></a></li>
+      				<li><a href="#"><i class="icon6"> </i></a></li>
+      				<div class="clearfix"> </div>
+      			</ul>
+      		</div>
+      	</div>
+	</div>
+	<div id="copyrigt">
+		<p style="text-align:center;">copyright@2017-2018 FootballData</p>
+		<br>
+	</div>
+</body>
+</html>
