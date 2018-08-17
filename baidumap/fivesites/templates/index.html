@@ -47,7 +47,7 @@
 	</div>
 	<br>
 	<!--map-->
-    <div>{{ fivesite_name_many }}</div>
+    <div></div>
 	<div id="map">	
 	</div>
 	<script>
@@ -70,7 +70,8 @@
         var coordinate_points_json_result = JSON.parse(coordinate_points_json);
 
         var coordinate_names = "{{ fivesite_name_many }}"
-        var coordinate_names_split = coordinate_names.split(",")
+        var coordinate_names_json = coordinate_names.replace(/\[|\]|\&|quot;/g,'')
+        var coordinate_names_split = coordinate_names_json.split(",")
 
         for(var i=0;i<coordinate_points_json_result.length;i++){
             var points = new BMap.Point(coordinate_points_json_result[i][0], coordinate_points_json_result[i][1]); // 创建点
