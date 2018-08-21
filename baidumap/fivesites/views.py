@@ -35,6 +35,13 @@ def index(request):
         coordinate_alone = (lngs, lats)
         coordinate_points.append(coordinate_alone)
 
+    #概述内容
+    fivesite_list_price_avg = list(FiveSite.objects.values_list('sites_avg_price'))
+    fivesite_call_phone = list(FiveSite.objects.values_list('sites_call_phone'))
+    fivesite_numbers = list(FiveSite.objects.values_list('sites_numbers'))
+    fivesite_run_time = list(FiveSite.objects.values_list('sites_run_time'))
+    fivesite_sum_result = list(zip(fivesite_list_price_avg, fivesite_call_phone, fivesite_numbers, fivesite_run_time ))
+
     context = {
         #基础数据
         'coordinate_chengdu': coordinate_chengdu,
@@ -47,6 +54,9 @@ def index(request):
         #多地址
         'coordinate_points': json.dumps(coordinate_points),
         'fivesite_name_many': json.dumps(fivesite_name_many, ensure_ascii=False),
+
+        #概述内容
+        'fivesite_sum_result': json.dumps(fivesite_sum_result, ensure_ascii=False),
     }
 
     return render(request, 'index.html', context)
