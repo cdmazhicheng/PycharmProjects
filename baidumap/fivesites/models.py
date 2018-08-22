@@ -10,3 +10,4 @@ class FiveSite(models.Model):
     sites_call_phone = models.CharField(max_length=20)
     sites_numbers = models.IntegerField(default=0)
     sites_run_time = models.CharField(max_length=200)
+    sites_price = models.CharField(max_length=400)

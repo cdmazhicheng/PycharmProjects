@@ -40,7 +40,8 @@ def index(request):
     fivesite_call_phone = list(FiveSite.objects.values_list('sites_call_phone'))
     fivesite_numbers = list(FiveSite.objects.values_list('sites_numbers'))
     fivesite_run_time = list(FiveSite.objects.values_list('sites_run_time'))
-    fivesite_sum_result = list(zip(fivesite_list_price_avg, fivesite_call_phone, fivesite_numbers, fivesite_run_time ))
+    fivesite_site_price = list(FiveSite.objects.values_list('sites_price'))
+    fivesite_sum_result = list(zip(fivesite_list_price_avg, fivesite_call_phone, fivesite_numbers, fivesite_run_time, fivesite_site_price ))
 
     context = {
         #基础数据
