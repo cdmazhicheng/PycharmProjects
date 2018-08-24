@@ -5,24 +5,17 @@ import requests
 import re
 import json
 
-# Create your views here.
+################################################################################
+#   index方法作用：                                                            #
+#   (1)定义各种场地信息，从数据库获取信息并加工成我们想要的信息；              #
+#   (2)通过context 字典将各种信息与index.html 需要展示的字段建立映射关系；     #
+################################################################################
 def index(request):
 
-    #基础数据
+    # 成都市地图坐标、百度地图的个人key
     coordinate_chengdu = [104.0723627301342, 30.663315899548743]
     my_ak = 'c3MKSgGnMtYR424l826lqRqIi1cKgGBG'
-
-    #单地址
-    # fivesite_list_only = FiveSite.objects.get(id=1).sites_addr  #获取地址
-    # url = 'http://api.map.baidu.com/geocoder/v2/?output=json&ak={}&address={}'.format(my_ak, fivesite_list_only)
-    # url_request = requests.get(url)
-    # result_test = url_request.text
-    # lng =re.search( '\d.{15}',re.search('"lng":.*,"lat"',result_test).group()).group()
-    # lat = re.search('\d.{15}', re.search('"lat":.*},"precise"', result_test).group()).group()
-    # coordinate_point = (lng, lat)
-    # fivesit_name_only = FiveSite.objects.get(id=1).sites_name
-
-    #多地址
+    #场地的地图坐标和地址
     coordinate_points = []
     fivesite_list_many = list(FiveSite.objects.values_list('sites_addr'))
     fivesite_name_many = list(FiveSite.objects.values_list('sites_name'))
@@ -34,8 +27,7 @@ def index(request):
         lats = re.search('\d.{15}', re.search('"lat":.*},"precise"', result_points).group()).group()
         coordinate_alone = (lngs, lats)
         coordinate_points.append(coordinate_alone)
-
-    #概述内容
+    #场地详细信息（人均消费、联系电话、场地数量、营业时间、场地价格）
     fivesite_list_price_avg = list(FiveSite.objects.values_list('sites_avg_price'))
     fivesite_call_phone = list(FiveSite.objects.values_list('sites_call_phone'))
     fivesite_numbers = list(FiveSite.objects.values_list('sites_numbers'))
@@ -44,19 +36,13 @@ def index(request):
     fivesite_sum_result = list(zip(fivesite_list_price_avg, fivesite_call_phone, fivesite_numbers, fivesite_run_time, fivesite_site_price ))
 
     context = {
-        #基础数据
+        #成都市地图坐标、百度地图的个人key
         'coordinate_chengdu': coordinate_chengdu,
         'my_ak': my_ak,
-
-        #单地址
-        # 'coordinate_point': coordinate_point,
-        # 'fivesit_name_only': fivesit_name_only,
-
-        #多地址
+        #场地的地图坐标和地址
         'coordinate_points': json.dumps(coordinate_points),
         'fivesite_name_many': json.dumps(fivesite_name_many, ensure_ascii=False),
-
-        #概述内容
+        #场地详细信息（人均消费、联系电话、场地数量、营业时间、场地价格）
         'fivesite_sum_result': json.dumps(fivesite_sum_result, ensure_ascii=False),
     }
 
