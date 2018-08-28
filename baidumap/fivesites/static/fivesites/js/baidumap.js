@@ -32,6 +32,18 @@ for(var i=0;i<coordinate_points_json_result.length;i++){
     var markers = new BMap.Marker(points);// 创建标注
     map.addOverlay(markers);    //增加点
     var label = new BMap.Label(coordinate_names_split[i], {offset:new BMap.Size(-10,-20)})// 增加标签
+    //label 添加样式
+    label.setStyle({
+        width: "120px",
+        color: '#fff',
+        background: '#ff8355',
+        border: '1px solid "#ff8355"',
+        borderRadius: "5px",
+        textAlign: "center",
+        height: "26px",
+        lineHeight: "26px"
+    });
+
     markers.setLabel(label)
     //增加概述
     var four_k = i*5
